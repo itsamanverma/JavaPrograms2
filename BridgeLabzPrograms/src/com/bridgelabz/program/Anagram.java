@@ -11,9 +11,9 @@ public static void main(String[] args)
   {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter the First String inputs...");
-	String st1=sc.nextLine();
+	String st1=sc.next();
 	System.out.println("Enter the Second String Inputs..");
-	String st2=sc.nextLine();
+	String st2=sc.next();
 	Utility u = new Utility();
 	boolean rs=u.isAnagram(st1,st2);
 	if(rs)

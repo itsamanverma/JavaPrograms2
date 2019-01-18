@@ -5,13 +5,10 @@ public class InsertionSortForString
 {
 	public static void main(String[] args) 
 	   {
-		//create the Scanner Object to take The User Inputs
-		   Scanner sc = new Scanner(System.in);
+		   Scanner sc = new Scanner(System.in);		//create the Scanner Object to take The User Inputs
 		   System.out.println("Enter the String");
-		   //Read the User inputs..
-		   String st= sc.nextLine();
-		   //Convert the String Into Char type Array..
-		   char ch[]=st.toCharArray();
+		   String st= sc.nextLine();//Read the User inputs..
+		   char ch[]=st.toCharArray();//Convert the String Into Char type Array..
 		   System.out.println("Enter the String Character by Character...");
 		   for(int i=0;i<ch.length;i++)
 		   {

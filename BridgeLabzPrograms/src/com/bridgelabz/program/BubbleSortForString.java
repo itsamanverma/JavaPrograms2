@@ -4,13 +4,10 @@ public class BubbleSortForString
 {
   public static void main(String[] args) 
   {
-	  //create the scanner class object to take user inputs
-	    Scanner sc = new Scanner(System.in);
+	    Scanner sc = new Scanner(System.in);//create the scanner class object to take user inputs
 		System.out.println("Enter the String");
-		//read the user string
-		String str=sc.next();
-		//convert the string into char type array
-		char ch[]=str.toCharArray();
+		String str=sc.next();//read the user string
+		char ch[]=str.toCharArray();//convert the string into char type array
 		System.out.println("Enter the Element of The Array");
 		for(int i=0;i<ch.length;i++)
 		{

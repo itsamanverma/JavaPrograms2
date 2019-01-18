@@ -11,9 +11,8 @@ public static void main(String[] args)
 	//create the Scanner class to Take User inputs//
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter the String to get the Possible permutation:");
-	String st=sc.nextLine();
+	String st=sc.next();
 	int n=st.length();
-	Utility u = new Utility();
-      u.permute(st,0,n-1);	
+      Utility.permute(st,0,n-1);	
   }
 }

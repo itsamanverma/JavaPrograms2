@@ -9,14 +9,32 @@ c. Logic ­> Use Recursion and check for largest value of the Note to return cha
 to get to minimum number of Notes
 */
 package com.bridgelabz.program;
+
 import java.util.Scanner;
 public class VendingMachine 
 {
   public static void main(String[] args) 
   {
    Scanner sc = new Scanner(System.in);
-   System.out.println("Enter the Currency:");
-   int enter_currency=sc.nextInt();
-    Utility.currency(enter_currency);
+   //System.out.println("Enter the rupee:");
+     boolean flag=true;
+     String input;//make the stake input validate format
+     System.out.println("Enter the Rupees..!");
+	  input=sc.next();
+	  while(flag)
+	  {
+		 if(Utility.isNumber(input)) 
+		 {
+			flag=false;
+		 }else 
+		 {
+			System.out.println("Enter the correct type of rupees:");
+			input=sc.next();
+		 }
+	  }
+   int enter_money=Integer.parseInt(input);
+   //int enter_money=sc.nextInt();
+    Utility.countNotes(enter_money);
   } 
 }
+ 
